@@ -64,15 +64,26 @@
             <div class="sharpblueBar">Added Items</div>
             <div class="container1">
             	<div class="spacer2">
-					<c:forEach items="${products}" var="p">
-						<tr>
-							<td><button>Edit Item</button></td>
-							<td><button>Delete Item</button></td>
-							<td>${p.name}</td>
-							<td>${p.quantity}</td>
-							<td>${p.itemId}</td>
-						</tr>
-					</c:forEach>
+					<table>
+						<thead>
+							<tr>
+								<th>edit</th>
+								<th>delete</th>
+								<th>Name</th>
+								<th>Quantity</th>
+								<th>ItemId</th>
+							</tr>
+							<c:forEach items="${products}" var="p">
+							<tr>
+								<td><button>Edit Item</button></td>
+								<td><button>Delete Item</button></td>
+								<td>${p.name}</td>
+								<td>${p.quantity}</td>
+								<td>${p.itemId}</td>
+							</tr>
+						</c:forEach>
+						</thead>
+					</table>
 					
             	</div>
             	<div class="instructionText">No items added</div>

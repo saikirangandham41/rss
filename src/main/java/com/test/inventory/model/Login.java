@@ -9,7 +9,7 @@ public class Login {
 	@NotEmpty
 	@NotNull
 	private String username;
-	
+
 	@NotEmpty
 	@NotNull
 	private String password;
@@ -37,5 +37,5 @@ public class Login {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 }

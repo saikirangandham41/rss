@@ -9,17 +9,18 @@ public class Product {
 	@NotEmpty
 	@NotNull
 	private String itemId;
-	
+
 	@NotEmpty
 	@NotNull
 	private String name;
-	
+
 	private int quantity;
-	
+
 	private String description;
 
-	public Product() {}
-	
+	public Product() {
+	}
+
 	public Product(String itemId, String name, int quantity, String description) {
 		this.itemId = itemId;
 		this.name = name;
@@ -58,5 +59,5 @@ public class Product {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
 }
